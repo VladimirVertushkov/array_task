@@ -1,0 +1,23 @@
+<!doctype html>
+<script src="https://ru.js.cx/test/libs.js"></script>
+<script src="test.js"></script>
+<script>
+
+  function unique(arr) {
+  let set = new Set;
+  for (let name of arr){
+    set.add(name);
+  }
+let sarr = Array.from(set);
+return sarr;
+}
+
+let values = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert (unique(values)); // Hare,Krishna,:-O
+
+</script>
+
+</html>
